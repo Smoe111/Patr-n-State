@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a39ca0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.stateController">
+   <children>
+      <VBox alignment="CENTER" layoutX="194.0" layoutY="55.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="289.0" prefWidth="212.0">
+         <children>
+            <Circle fx:id="circulo" fill="#e4eaed" radius="90.0" stroke="#e2e6e9" strokeType="INSIDE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Circle>
+            <HBox prefHeight="71.0" prefWidth="212.0">
+               <children>
+                  <Label text="Seleccione el color deseado" textFill="#1c0f1e" wrapText="true">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="colorCirculo" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #8a637e; -fx-background-radius: 10;">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #563a4e;" text="IMAGE EDITOR" textFill="#a484a4">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
